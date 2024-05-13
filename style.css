@@ -1,0 +1,234 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: rgb(47, 47, 62);
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(225, 208, 208);
+}
+
+header nav #left-heading {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+header button,
+.top1-btn {
+    background-color: blueviolet;
+    border: 0;
+    height: 30px;
+    width: 10%;
+    text-transform: uppercase;
+    color: white;
+}
+
+.top1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top1-heading {
+    font-size: 50px;
+    color: rgb(225, 208, 208);
+    font-weight: 500;
+    font-family: "Poetsen One", sans-serif;
+    font-style: normal;
+}
+
+.mini-text {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0px;
+    color: rgb(226, 223, 223);
+}
+
+.top1-imgs {
+    /* margin: 10%; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.second-heading {
+    font-size: 50px;
+    color: rgb(225, 208, 208);
+    font-weight: 500;
+    font-family: "Poetsen One", sans-serif;
+    font-style: normal;
+}
+
+input {
+    width: 261px;
+    border: 2px solid black;
+    color: white;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+#btn1 {
+    background-color: blueviolet;
+    border: 0;
+    height: 35px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#results {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 10%;
+}
+
+#newData>#heading,
+.newData>.heading {
+    color: aqua;
+    font-size: larger;
+    color: rgb(230, 144, 144);
+}
+
+#newData,
+.newData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+#newData>img,
+.newData img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+#newData>#text,
+.newData .text {
+    text-align: center;
+    font-size: 21px;
+    color: darkgrey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#nd-btn,
+.nd-btn {
+    background-color: red;
+    border-radius: 10px;
+    height: 30px;
+    color: white;
+    border: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.frant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#new p{
+    color: rgb(230, 222, 222);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#new img{
+    border-radius: 10px;
+}
+#new{
+    margin-left: 340px;
+    display: none;
+    border: 2px solid black;
+    box-shadow: 0px 0px 30px black;
+    width: 50%;
+}
+.top1-imgs .on{
+    width: 20%;
+}
+.top1-imgs .se{
+    width: 30%;
+}
+@media screen and  (max-width:700px){
+    .top1-imgs {
+        /* margin: 10%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .newData{
+        width: 78%;
+    }
+    .frant {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 408px;
+        height: fit-content;
+    }
+    .newData>.heading {
+        color: aqua;
+        text-align: center;
+        font-size: larger;
+        color: rgb(230, 144, 144);
+    }
+    #new{
+        width: fit-content;
+        margin: auto;
+    }
+    #results {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 10px;
+        grid-auto-flow: row;
+        margin-top: 10%;
+    }
+    .second-heading {
+        font-size: 50px;
+        text-align: center;
+        color: rgb(225, 208, 208);
+        font-weight: 500;
+        font-family: "Poetsen One", sans-serif;
+        font-style: normal;
+    }
+    .top1-heading {
+        font-size: 50px;
+        color: rgb(225, 208, 208);
+        font-weight: 500;
+        font-family: "Poetsen One", sans-serif;
+        font-style: normal;
+        text-align: center;
+    }
+    header button, .top1-btn {
+        background-color: blueviolet;
+        border: 0;
+        height: 30px;
+        width: 20%;
+        text-transform: uppercase;
+        color: white;
+    }
+}
